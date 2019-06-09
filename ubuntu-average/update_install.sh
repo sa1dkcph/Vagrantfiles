@@ -12,10 +12,9 @@ wget https://github.com/ComplianceAsCode/content/releases/download/v0.1.44/scap-
 unzip scap-security-guide-0.1.44-oval-510.zip
 rm scap-security-guide-0.1.44-oval-510.zip
 mv /home/vagrant/scap-security-guide-0.1.44-oval-5.10 /home/vagrant/ssg
-mv /usr/share/xml/scap/ssg/content /home/vagrant/
-mv /home/vagrant/content /home/vagrant/ssg
-cp /home/vagrant/ssg/ssg-ubuntu1604-cpe-dictionary.xml /usr/share/openscap/cpe
-cp /home/vagrant/ssg/ssg-ubuntu1604-cpe-oval.xml /usr/share/openscap/cpe
+mv /usr/share/xml/scap/ssg/content /home/vagrant/ssg
+cp /home/vagrant/ssg/content/ssg-ubuntu1604-cpe-dictionary.xml /usr/share/openscap/cpe
+cp /home/vagrant/ssg/content/ssg-ubuntu1604-cpe-oval.xml /usr/share/openscap/cpe
 mv /usr/share/openscap/cpe/ssg-ubuntu1604-cpe-dictionary.xml /usr/share/openscap/cpe/openscap-cpe-dict.xml
 #wget https://people.canonical.com/~ubuntu-security/oval/com.ubuntu.xenial.cve.oval.xml
 
